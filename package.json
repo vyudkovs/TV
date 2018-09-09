@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prestart": "yarn install",
-    "start": "nodemon index.js --exec babel-node --presets es2015,stage-0"
+    "start": "nodemon index.js --exec babel-node --presets es2015,stage-0",
+    "test": "jasmine"
   },
   "keywords": [
     "swagger"
@@ -20,7 +21,10 @@
     "babel-register": "^6.11.6",
     "connect": "^3.2.0",
     "js-yaml": "^3.3.0",
-    "nodemon": "^1.18.4",
     "swagger-tools": "0.10.1"
+  },
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "nodemon": "^1.18.4"
   }
 }
